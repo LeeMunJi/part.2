@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        
+        // 후위 증가연산자: ';'이 끝난 후 증가된다.
+        // 전위 증가연산자: ';'이 끝나기 전에 이미 증가가 되어있다.
+        alert(num++); // 10
+        // 위에 끝나고 나서 1증감, 그리고 아래 실행 끝나기 전에 1증감
+        alert(++num); // 12
+        // 위에서 num이 12인데 아래 실행이 끝난다음에 1이 증감되기 때문에
+        // 결론적으로는 그 전인 12가 그대로 출력
+        alert(num++); // 12
+        // 위 연산 끝난다음 저장된 13이 아래에서 출력
+        document.write(num); // 13
+    </script>
+</body>
+</html>
